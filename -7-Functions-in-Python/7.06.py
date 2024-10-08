@@ -19,7 +19,7 @@ def prime_check(x: int) -> bool:
         return False
 
     i = 2
-    while i < x:  # Тест простоты числа пребором
+    while i < x:  # Тест простоты числа перебором
         if x % i != 0:
             i += 1
         else:
