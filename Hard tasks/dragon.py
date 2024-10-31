@@ -2,6 +2,7 @@ from random import randint
 from colorama import Fore, init
 
 init(autoreset=True)
+hit_count = 0
 hero_health = 100
 dragon_health = 500
 hero_name = input("Введите имя героя: ")
@@ -26,6 +27,7 @@ while True:
     else:
         print(Fore.GREEN + f"Вы наносите {hero_damage} единиц урона")
         dragon_health -= hero_damage
+    hit_count += 1
     if dragon_health <= 0:
         victory = True
         break
@@ -47,6 +49,6 @@ while True:
         break
 
 if victory:
-    print(Fore.GREEN + "\nВы победили!")
+    print(Fore.GREEN + f"\nВы победили! Вы нанесли {hit_count} ударов")
 else:
     print(Fore.RED + "\nВы проиграли")
