@@ -1,1 +1,1 @@
-[THIS SPACE INTENTIONALLY LEFT BLANK]
+<img src=".idea/сынок.jpg">
